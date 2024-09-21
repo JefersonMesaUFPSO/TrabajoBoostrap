@@ -63,3 +63,46 @@ header .container {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+
+
+.navbar {
+    transition: background-color 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.navbar-brand i {
+    color: var(--primary-color);
+}
+
+footer a:hover {
+    color: var(--primary-color) !important;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 100vh;
+    }
+}
+
+/* Design fot the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gray-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffa000;
+}
+
